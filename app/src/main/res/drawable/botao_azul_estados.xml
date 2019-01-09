@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item app:state_sending="true"
+        android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorButtonSending"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorButtonDisabled"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true">
+        <shape>
+            <solid android:color="@color/colorBlueGrey"/>
+            <corners android:radius="2dp"/>
+        </shape>
+    </item>
+
+    <!--<item android:state_focused="true" >-->
+        <!--<shape>-->
+            <!--<gradient-->
+                <!--android:endColor="#e29638"-->
+                <!--android:startColor="#d88722"-->
+                <!--android:angle="270" />-->
+            <!--<stroke-->
+                <!--android:width="3dp"-->
+                <!--android:color="#56514b" />-->
+            <!--<corners-->
+                <!--android:radius="3dp" />-->
+            <!--<padding-->
+                <!--android:left="10dp"-->
+                <!--android:top="10dp"-->
+                <!--android:right="10dp"-->
+                <!--android:bottom="10dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item>-->
+        <!--<shape>-->
+            <!--<gradient-->
+                <!--android:endColor="#fcfbf9"-->
+                <!--android:startColor="#e8e6e3"-->
+                <!--android:angle="270" />-->
+            <!--<stroke-->
+                <!--android:width="3dp"-->
+                <!--android:color="#5e5a54" />-->
+            <!--<corners-->
+                <!--android:radius="3dp" />-->
+            <!--<padding-->
+                <!--android:left="10dp"-->
+                <!--android:top="10dp"-->
+                <!--android:right="10dp"-->
+                <!--android:bottom="10dp" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+</selector>

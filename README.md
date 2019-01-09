@@ -1,2 +1,3 @@
-# horaextra
-App Android Kotlin
+# HoraExtra
+
+mobile android kotlin + jetpack

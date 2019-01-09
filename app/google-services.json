@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "671925668622",
+    "firebase_url": "https://horaextra-da33e.firebaseio.com",
+    "project_id": "horaextra-da33e",
+    "storage_bucket": "horaextra-da33e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:671925668622:android:1378e8f4f3b9b19e",
+        "android_client_info": {
+          "package_name": "br.com.componel.horaextra"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "671925668622-3n503au4t5t1jnp679b9p3onka264t3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkdJ9RQKE4YdaEYGohkG2ES1WE5p1fY_k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

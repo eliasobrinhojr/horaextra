@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="extra"
+            type="br.com.componel.horaextra.model.HoraExtra"/>
+        <import type="br.com.componel.horaextra.extensions.FormataRealKt"/>
+
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/item_lista_extra_cardview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/item_lista_historico_situacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@string/font_family_medium"
+                    android:text="@={extra.drt_funcionario}"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/textView8"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:text="EXTRA" />
+
+                <ImageView
+                    android:id="@+id/item_lista_historico_img"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@+id/item_lista_historico_situacao"
+                    app:layout_constraintTop_toBottomOf="@+id/item_lista_historico_situacao"
+                    android:contentDescription="@string/todo" />
+
+                <TextView
+                    android:id="@+id/item_lista_historico_filial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@={extra.nome_funcionario}"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toEndOf="@+id/item_lista_historico_img"
+                    app:layout_constraintTop_toTopOf="@+id/item_lista_historico_img"
+                    tools:text="Fulano de tal" />
+
+                <TextView
+                    android:id="@+id/item_lista_historico_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="@string/font_family_medium"
+                    android:text="@string/inicio"
+                    android:textColor="#54000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@+id/item_lista_historico_filial"
+                    app:layout_constraintTop_toBottomOf="@+id/item_lista_historico_filial"
+                    tools:text="Início" />
+
+                <TextView
+                    android:id="@+id/item_lista_historico_data_inicio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:fontFamily="@string/font_family_regular"
+                    android:text="@={extra.hora_incial}"
+                    android:textColor="#54000000"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/item_lista_historico_inicio"
+                    app:layout_constraintTop_toBottomOf="@+id/item_lista_historico_inicio"
+                    tools:text="08/07/2018" />
+
+                <TextView
+                    android:id="@+id/item_lista_historico_fim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_medium"
+                    android:text="@string/fim"
+                    android:textColor="#54000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/item_lista_historico_data_fim"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.85"
+                    app:layout_constraintStart_toEndOf="@+id/item_lista_historico_inicio"
+                    app:layout_constraintTop_toTopOf="@+id/item_lista_historico_inicio"
+                    tools:text="Fim" />
+
+                <TextView
+                    android:id="@+id/item_lista_historico_data_fim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/font_family_regular"
+                    android:text="@={extra.hora_final}"
+                    android:textColor="#54000000"
+                    android:textSize="15sp"
+                    app:layout_constraintStart_toStartOf="@+id/item_lista_historico_fim"
+                    app:layout_constraintTop_toBottomOf="@+id/item_lista_historico_fim"
+                    tools:text="08/07/2018" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{FormataRealKt.toBr(extra.custo)}"
+                    android:textColor="@android:color/holo_red_dark"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/item_lista_historico_situacao"
+                    app:layout_constraintEnd_toEndOf="@+id/item_lista_historico_data_fim"
+                    app:layout_constraintStart_toStartOf="@+id/item_lista_historico_fim"
+                    app:layout_constraintTop_toTopOf="@+id/item_lista_historico_situacao"
+                    tools:text="R$ 40.00" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

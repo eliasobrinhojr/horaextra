@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+
+    tools:context=".ui.fragments.SemConexaoFragment"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:src="@drawable/img_sem_conexao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        android:contentDescription="@string/todo" />
+    <Button
+        android:text="@string/atualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/font_family_medium"
+        android:id="@+id/button2" android:layout_marginBottom="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView" app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp" app:layout_constraintEnd_toEndOf="@+id/imageView"
+        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="@+id/imageView"
+        android:layout_marginStart="8dp" android:textColor="#3d000000" app:layout_constraintVertical_bias="1.0"/>
+    <TextView
+        android:text="@string/ops"
+        android:layout_width="34dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3" android:textColor="#4e4e4e"
+        android:textSize="16sp" android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4" app:layout_constraintEnd_toEndOf="@+id/textView4"
+        android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="@+id/textView4"
+        android:layout_marginStart="8dp"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/sem_conexao"
+        android:textColor="#4e4e4e"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="@+id/button2"
+        android:layout_marginEnd="8dp" />
+</android.support.constraint.ConstraintLayout>

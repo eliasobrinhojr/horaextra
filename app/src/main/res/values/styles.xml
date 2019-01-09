@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="cardViewStyle">@style/CardView</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Theme.AppCompat.TelaCheia" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="TextLabelHome">
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textColor">#4e4e4e</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style parent="" name="TextLabelAgendadas">
+        <item name="android:text">\u0020Supervisão</item>
+        <item name="android:drawableStart">@drawable/icon_item_lista_agendada</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textColor">#308dcc</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style parent="" name="TextLabelHora">
+        <item name="android:textColor">#8a000000</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style parent="" name="TextLabelFilial">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+    </style>
+
+
+    <style parent="" name="TextLabelInicio">
+        <item name="android:text">@string/lb_inicio</item>
+        <item name="android:fontFamily">@string/font_family_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#54000000</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style parent="" name="TextLabelDataInicio">
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textColor">#54000000</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+    <style parent="" name="TextLabelVerMais">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@string/font_family_regular</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+</resources>

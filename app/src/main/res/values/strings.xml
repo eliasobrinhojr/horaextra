@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Hora Extra</string>
+
+    <string name="login_username">Usuário</string>
+    <string name="login_password">Senha</string>
+    <string name="login_button">ENTRAR</string>
+    <string name="login_button_sending">ENVIANDO…</string>
+
+    <string name="extras">Extras</string>
+
+    <string name="lb_inicio">início</string>
+    <string name="lb_termino">Término</string>
+    <string name="setor">Setor</string>
+    <string name="empresa">Empresa</string>
+    <string name="sem_conexao">Sem conexão.</string>
+    <string name="ops">Ops!</string>
+    <string name="atualizar">ATUALIZAR</string>
+    <string name="sair">Sair</string>
+    <string name="pesquisar">Pesquisar</string>
+    <string name="inicio">Início</string>
+    <string name="fim">Fim</string>
+    <string name="todo">TODO</string>
+</resources>
